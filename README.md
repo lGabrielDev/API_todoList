@@ -1,14 +1,13 @@
 <!-- title -->
 <h1 align="center">
     <span>Todo List API</span>
-    <img src="./src/main/resources/static/img/readme/todo_list_h1_image.svg" alt="todo list image icon" width="400px" align="center">
 </h1>
 
 <!-- badges -->
 <div align="left">
     <img src="https://img.shields.io/badge/license-MIT-yellow" alt="badge icon"></img>
     <img src="https://img.shields.io/badge/version-1.0-green" alt="badge icon"></img>
-    <img src="https://img.shields.io/badge/repo size-5.15 MB-orange" alt="badge icon"></img>
+    <img src="https://img.shields.io/badge/repo size-118 MB-orange" alt="badge icon"></img>
 </div>
 
 <!-- languages -->
@@ -39,15 +38,16 @@ Essa é uma todolist criada para manipular tarefas diárias. O Objetivo aqui é 
 
 <!-- Technologies -->
 ## <img src="https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_48-256.png" alt="todo list image icon" width="40px" align="center"> Tecnologias
-- Java
-- Maven
-- Spring Boot
-- Spring Web
+
+- Java 17
+- Spring Boot 3.3.4
 - Spring Data JPA
-- PostgreSQL Driver
+- Spring Web
 - OpenAPI (Swagger)
+- PostgreSQL
+- Junit, Mockito and AssertJ
+- Docker 27.0.3
 - Spring Security
-- Mockito and AssertJ
 
 <hr>
 <br>
