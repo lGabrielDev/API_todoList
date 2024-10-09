@@ -1,14 +1,13 @@
 <!-- title -->
 <h1 align="center">
     <span>Todo List API</span>
-    <img src="../static/img/readme/todo_list_h1_image.svg" alt="todo list image icon" width="400px" align="center">
 </h1>
 
 <!-- badges -->
 <div align="left">
     <img src="https://img.shields.io/badge/license-MIT-yellow" alt="badge icon"></img>
     <img src="https://img.shields.io/badge/version-1.0-green" alt="badge icon"></img>
-    <img src="https://img.shields.io/badge/repo size-5.15 MB-orange" alt="badge icon"></img>
+    <img src="https://img.shields.io/badge/repo size-118 MB-orange" alt="badge icon"></img>
 </div>
 
 <!-- languages -->
@@ -28,7 +27,7 @@
 ## <img src="https://cdn2.iconfinder.com/data/icons/flat-pack-1/64/Computer-512.png" alt="todo list image icon" width="40px" align="center"> About the project
 This is a TodoList API designed for managing your daily tasks. The objetive here is practice the CRUD operations, using as background a todolist.
 
-### How the API works
+### How the API works?
 1. User will create an account (authentication).
 2. User will create a category.
 3. After those 2 steps, the user can start to create their own tasks and manage them.
@@ -38,15 +37,16 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 
 <!-- Technologies -->
 ## <img src="https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_48-256.png" alt="todo list image icon" width="40px" align="center"> Technologies
-- Java
-- Maven
-- Spring Boot
-- Spring Web
+
+- Java 17
+- Spring Boot 3.3.4
 - Spring Data JPA
-- PostgreSQL Driver
+- Spring Web
 - OpenAPI (Swagger)
+- PostgreSQL
+- Junit, Mockito and AssertJ
+- Docker 27.0.3
 - Spring Security
-- Mockito and AssertJ
 
 <hr>
 <br>
@@ -275,9 +275,8 @@ For each operation, we show all the possible responses
 ## <img src="https://cdn3.iconfinder.com/data/icons/start-up-4/44/rocket-256.png" alt="todo list image icon" width="40px" align="center"> Build and run
 
 ### Requirements
-- [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
-- [PostgreSQL 16](https://www.postgresql.org/download/)
-- [git 2.34.1](https://git-scm.com/download)
+- [git](https://git-scm.com/downloads)
+- [Docker](https://docs.docker.com/desktop/wsl/)
 
 <br>
 
@@ -285,42 +284,42 @@ For each operation, we show all the possible responses
 
 1. Clone this repository
     ```bash
-    git clone https://github.com/lGabrielDev/API_todoList.git;
+    git clone https://github.com/lGabrielDev/API_todoList.git
     ```
 <br>
 
-2. Setup the application.properties:
+2. Go to
 
-    ```properties
-    # Database path
-    spring.datasource.url=jdbc:postgresql://localhost:5432/your_database
-
-    # postgres username
-    spring.datasource.username=yourPostgresUsername
-
-    # postgres password
-    spring.datasource.password=yourPostgresPassword
-
-    # Every time we update a entity, the reference table will update as well
-    spring.jpa.hibernate.ddl-auto=update
-
-    # Show the SQL commands
-    spring.jpa.show-sql=true
-
-    # Swagger sorted operations
-    springdoc.swagger-ui.operationsSorter=method
+    ```bash
+    cd API_todoList
     ```
-<br>
-
-3. Run the application and access the endpoint: `http://localhost:8080/swagger-ui/index.html`
 
 <br>
 
-4. Create a user
+3. Assign the values ​​in the environment variables
 
-5. Create a category
+    <img alt="environment variables image example" src="./img/readme/preencher_envs.png" width="350px">
 
-6. Create your taks and have fun! 😎
+<br>
+
+4.  Run the containers
+
+    ```bash
+    docker compose up -d;
+    ```
+
+<br>
+
+5. Swagger doc: `http://localhost:8080/swagger.html`
+
+<br>
+
+6. Create a user
+
+7. Create a category
+
+8. Create a task
+
 
 <!-- <div>
     <span>For more detailed informations, watch the tutorial video here</span>
@@ -353,7 +352,7 @@ For each operation, we show all the possible responses
     <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center">
     <span>License</span>
 </h2>
-<p>This project is under the <a href="./LICENSE.txt"> MIT </a> license.</p>
+<p>This project is under the <a href="./../../../../LICENSE.txt"> MIT </a> license.</p>
 
 <hr>
 <br>
@@ -368,6 +367,6 @@ For each operation, we show all the possible responses
 <br>
 
 <div align="center">
-    <img src="../static/img/readme/profile_padrao_circular.png" alt="profile avatar" width="80px">
+    <img src="../static/img/readme/profile_circular.png" alt="profile avatar" width="80px">
     <p> <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎</p>
 </div>
