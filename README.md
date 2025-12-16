@@ -315,7 +315,9 @@ Para cada operação é mostrado todas as respostas possíveis
 4.  Suba os containers
 
     ```bash
-    docker compose up -d;
+     mvn clean package -DskipTests;  # Compila o código Java e gera o arquivo .jar
+     docker pull openjdk:17-ea-10-jdk;  # Baixa a imagem base do OpenJDK 17.
+     docker compose up --build; # Constrói as imagens Docker e sobe os containers
     ```
 
 <br>
