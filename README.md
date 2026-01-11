@@ -33,6 +33,11 @@ Essa é uma todolist criada para manipular tarefas diárias. O Objetivo aqui é 
 2. O usuário vai criar uma categoria de tarefas.
 3. O usuário vai criar suas tarefas e gerenciá-las.
 
+<br>
+
+Vídeo do projeto: [<img src="./src/main/resources/static/img/readme/youtube_icon.png" alt="todo list image icon" width="40px" align="center">](https://www.youtube.com/watch?v=IGdVJ5rxb6o)
+
+
 <hr>
 <br>
 
@@ -377,6 +382,6 @@ O projeto está sob a licença do [MIT](LICENSE.txt).
 <br>
 
 <div align="center">
-    <img src="./src/main/resources/static/img/readme/profile_circular.png" alt="profile avatar" width="150px">
+    <img src="./src/main/resources/static/img/readme/profile_circular.jpeg" alt="profile avatar" width="150px">
     <p> <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎 </p>
 </div>
